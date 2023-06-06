@@ -28,12 +28,45 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			btnFirst = new Button();
+			pcbMainViewer = new PictureBox();
+			((System.ComponentModel.ISupportInitialize)pcbMainViewer).BeginInit();
+			SuspendLayout();
+			// 
+			// btnFirst
+			// 
+			btnFirst.Location = new Point(56, 71);
+			btnFirst.Name = "btnFirst";
+			btnFirst.Size = new Size(75, 23);
+			btnFirst.TabIndex = 0;
+			btnFirst.Text = "First";
+			btnFirst.UseVisualStyleBackColor = true;
+			btnFirst.Click += button1_Click;
+			// 
+			// pcbMainViewer
+			// 
+			pcbMainViewer.Location = new Point(460, 108);
+			pcbMainViewer.Name = "pcbMainViewer";
+			pcbMainViewer.Size = new Size(200, 200);
+			pcbMainViewer.TabIndex = 1;
+			pcbMainViewer.TabStop = false;
+			// 
+			// FormMain
+			// 
+			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
-			Text = "Form1";
+			Controls.Add(pcbMainViewer);
+			Controls.Add(btnFirst);
+			Name = "FormMain";
+			Text = "Bitmap Fun!";
+			((System.ComponentModel.ISupportInitialize)pcbMainViewer).EndInit();
+			ResumeLayout(false);
 		}
 
 		#endregion
+
+		private Button btnFirst;
+		private PictureBox pcbMainViewer;
 	}
 }
